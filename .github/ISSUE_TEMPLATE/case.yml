@@ -1,0 +1,74 @@
+name: "Submit a case · 投稿案例"
+description: "Share something you built with AI. A prototype counts. · 分享你用 AI 做出来的东西，原型也算。"
+title: "[Case] "
+labels: ["case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing. Real numbers and specific sticking points help the next person most. Write in English or Chinese.
+        谢谢分享。真实的数字和具体卡在哪，对下一个人最有用。中英文都可以。
+
+        What makes a good case · 好案例长什么样: [cases/community/README.md](https://github.com/zhitongblog/ai-pm-playbook/blob/main/cases/community/README.md)
+  - type: textarea
+    id: what
+    attributes:
+      label: "What did you build? · 你做了什么？"
+      description: "Who it's for, what problem it solves, the one thing it does. · 给谁用、解决什么问题、核心做什么。"
+      placeholder: "e.g. An iOS app that crops ID photos to official sizes for 10 countries. · 例：一个按 10 个国家官方尺寸裁切证件照的 iOS 应用。"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: "Link · 链接"
+      description: "Website, store page, repo, or a video / screenshots. · 官网、商店页、仓库，或者视频/截图。"
+      placeholder: "https://"
+    validations:
+      required: true
+  - type: textarea
+    id: tools
+    attributes:
+      label: "AI tools used · 用了哪些 AI 工具"
+      description: "Agents, models, skills, and the main tech if you know it. · 用的 agent、模型、技能，知道的话写上主要技术栈。"
+      placeholder: "e.g. Claude Code + the doaipm skill; Swift, Vision · 例：Claude Code + doaipm skill；Swift、Vision"
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: "Time spent · 花了多久"
+      description: "From the first prompt to where it is now. Commits / builds / releases if you have them. · 从第一句提示词到现在。有提交数、build 数、版本数也写上。"
+      placeholder: "e.g. 3 days, 21 commits · 例：3 天，21 个提交"
+    validations:
+      required: true
+  - type: textarea
+    id: stuck
+    attributes:
+      label: "Where did you get stuck? · 卡在哪了？"
+      description: "Be specific: the error, the rejection reason, the bug that threw no error. How you found it and what fixed it. · 写具体：报错、被拒原因、不报错的 bug。怎么发现的，怎么解决的。"
+    validations:
+      required: true
+  - type: textarea
+    id: advice
+    attributes:
+      label: "What would you tell others? · 想对别人说什么？"
+      description: "One or two sentences from your own experience. · 从你自己的经历出发，一两句话。"
+    validations:
+      required: false
+  - type: input
+    id: credit
+    attributes:
+      label: "How should we credit you? · 怎么署名？"
+      description: "Name and a link (GitHub, site, or social). Also list anyone else who worked on it, or a project it's built on. · 名字和链接（GitHub、个人站或社交账号）。别人参与过、建在别的项目上，也写出来。"
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: "License and consent · 授权"
+      options:
+        - label: "I agree that this case may be published in this repo under CC BY 4.0, with credit to me, and may be written up on doaipm.com and its channels. · 我同意这个案例以 CC BY 4.0 协议收录进本仓库并署我的名，也可以写成 doaipm.com 及其渠道上的文章。"
+          required: true
+        - label: "Everything I wrote is true, and I have the right to share it. · 我写的都是真实情况，并且我有权分享。"
+          required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Discussions · 讨论区"
+    url: https://github.com/zhitongblog/ai-pm-playbook/discussions
+    about: "Show what you built, ask open questions, share ideas, argue rankings. · 晒作品、开放提问、提想法、百人榜吵分。"
+  - name: "doaipm.com"
+    url: https://doaipm.com
+    about: "The method, free tools, the blog and the playbook. · 方法、免费工具、博客和手册。"

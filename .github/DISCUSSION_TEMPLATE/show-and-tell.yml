@@ -1,0 +1,34 @@
+title: "[Show] "
+labels: ["show-and-tell"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Show what you built with AI. A prototype counts. English or Chinese.
+        晒一下你用 AI 做出来的东西，原型也算。中英文都可以。
+  - type: input
+    id: what
+    attributes:
+      label: "What is it, in one sentence? · 一句话说它是什么"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: "Link · 链接"
+      description: "Website, store page, repo, or video. · 官网、商店页、仓库或视频。"
+    validations:
+      required: false
+  - type: textarea
+    id: story
+    attributes:
+      label: "How did you build it? · 怎么做出来的"
+      description: "AI tools used, how long it took, one thing that surprised you or where you got stuck. Screenshots welcome. · 用了哪些 AI 工具、花了多久、一个意外或卡住的地方。欢迎贴截图。"
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: "What feedback do you want? · 想听什么反馈"
+    validations:
+      required: false

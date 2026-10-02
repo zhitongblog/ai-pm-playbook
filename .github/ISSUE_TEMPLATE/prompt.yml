@@ -1,0 +1,67 @@
+name: "Submit a prompt · 投稿提示词"
+description: "A prompt that worked on a real project. · 在真项目里管用的提示词。"
+title: "[Prompt] "
+labels: ["prompt"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Prompts you actually used beat clever ones. See existing prompts for the format: [prompts/](https://github.com/zhitongblog/ai-pm-playbook/tree/main/prompts)
+        真用过的提示词比写得漂亮的更有价值。格式参考已有的：[prompts/](https://github.com/zhitongblog/ai-pm-playbook/tree/main/prompts)
+  - type: input
+    id: name
+    attributes:
+      label: "Name · 名字"
+      description: "A short name for the prompt. · 给这条提示词起个短名字。"
+      placeholder: "e.g. Make the AI list what it changed · 例：让 AI 列出它改了什么"
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: "Phase · 阶段"
+      options:
+        - "Discover · 发现"
+        - "Define · 定义"
+        - "Design · 设计"
+        - "Develop · 开发"
+        - "Validate · 验证"
+        - "After launch · 上线后"
+    validations:
+      required: true
+  - type: textarea
+    id: when
+    attributes:
+      label: "When to use it · 什么时候用"
+      description: "The situation that calls for this prompt. · 什么情况下用这条。"
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: "The prompt · 提示词"
+      description: "Paste it as you used it. Put the parts others should replace in [brackets]. · 原样贴出来，别人需要替换的部分放进 [方括号]。"
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: "What happened when you used it · 用了之后怎么样"
+      description: "The project, the tool, and what changed. No need to oversell. · 哪个项目、什么工具、带来了什么变化。如实写。"
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: "How should we credit you? · 怎么署名？"
+      placeholder: "Name + link · 名字 + 链接"
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: "License · 授权"
+      options:
+        - label: "I agree this prompt may be published in this repo under CC BY 4.0, with credit to me. · 我同意这条提示词以 CC BY 4.0 协议收录进本仓库，并署我的名。"
+          required: true

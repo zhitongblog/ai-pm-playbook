@@ -1,0 +1,37 @@
+name: "Ask a question · 提问"
+description: "Stuck on something? Ask here. · 卡住了？在这里问。"
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open-ended discussions fit better in [Discussions → Q&A](https://github.com/zhitongblog/ai-pm-playbook/discussions). Specific questions are welcome here.
+        开放式的讨论更适合放在 [Discussions → Q&A](https://github.com/zhitongblog/ai-pm-playbook/discussions)。具体的问题欢迎在这里提。
+  - type: textarea
+    id: building
+    attributes:
+      label: "What are you building? · 你在做什么？"
+      description: "One or two sentences. · 一两句话。"
+    validations:
+      required: true
+  - type: textarea
+    id: stuck
+    attributes:
+      label: "Where are you stuck? · 卡在哪了？"
+      description: "What you expected, what happened instead, any error message. · 你预期的是什么，实际发生了什么，有报错就贴上。"
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: "What have you tried? · 试过什么？"
+    validations:
+      required: true
+  - type: input
+    id: tools
+    attributes:
+      label: "Tools and environment · 工具和环境"
+      placeholder: "e.g. Claude Code, macOS, Tauri · 例：Claude Code、macOS、Tauri"
+    validations:
+      required: false
