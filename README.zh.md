@@ -53,7 +53,7 @@ doaipm 是「DO AI PM」的缩写。这套方法认为，现在真正要紧的�
 
 **微信群「AI 产品经理 · 说出来就做出来」**
 
-加微信 进群：扫码或搜索，验证语写「doaipm + 你在做的东西」
+扫码加我微信，验证语写「doaipm + 你在做的东西」，我拉你进群。（群二维码 7 天就过期，所以先加个人号。）
 
 <img src="https://doaipm.com/contact/wechat.jpg" alt="微信二维码" width="180">
 
